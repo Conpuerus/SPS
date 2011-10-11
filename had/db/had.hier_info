@@ -1,0 +1,5 @@
+|delic_casu
+LEDR[0] <= inst74.DB_MAX_OUTPUT_PORT_TYPE
+KEY[0] => inst63.IN0
+
+

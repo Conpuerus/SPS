@@ -1,0 +1,117 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'inst123'
+Slack : -3.008
+TNS   : -3.541
+
+Type  : Slow Model Setup 'IN'
+Slack : -2.688
+TNS   : -46.635
+
+Type  : Slow Model Setup 'SW[0]'
+Slack : -0.539
+TNS   : -0.539
+
+Type  : Slow Model Setup '74162:inst108|43'
+Slack : 4.441
+TNS   : 0.000
+
+Type  : Slow Model Hold '74162:inst108|43'
+Slack : -4.171
+TNS   : -4.171
+
+Type  : Slow Model Hold 'IN'
+Slack : -3.518
+TNS   : -39.172
+
+Type  : Slow Model Hold 'SW[0]'
+Slack : -0.219
+TNS   : -0.219
+
+Type  : Slow Model Hold 'inst123'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Recovery 'SW[0]'
+Slack : 1.147
+TNS   : 0.000
+
+Type  : Slow Model Removal 'SW[0]'
+Slack : -0.377
+TNS   : -0.377
+
+Type  : Slow Model Minimum Pulse Width 'IN'
+Slack : -1.380
+TNS   : -29.380
+
+Type  : Slow Model Minimum Pulse Width 'SW[0]'
+Slack : -1.380
+TNS   : -2.380
+
+Type  : Slow Model Minimum Pulse Width 'inst123'
+Slack : -0.500
+TNS   : -21.000
+
+Type  : Slow Model Minimum Pulse Width '74162:inst108|43'
+Slack : -0.500
+TNS   : -1.000
+
+Type  : Fast Model Setup 'inst123'
+Slack : -1.197
+TNS   : -1.197
+
+Type  : Fast Model Setup 'IN'
+Slack : -0.552
+TNS   : -6.785
+
+Type  : Fast Model Setup 'SW[0]'
+Slack : 0.124
+TNS   : 0.000
+
+Type  : Fast Model Setup '74162:inst108|43'
+Slack : 2.331
+TNS   : 0.000
+
+Type  : Fast Model Hold '74162:inst108|43'
+Slack : -1.951
+TNS   : -1.951
+
+Type  : Fast Model Hold 'IN'
+Slack : -1.933
+TNS   : -29.304
+
+Type  : Fast Model Hold 'SW[0]'
+Slack : -0.149
+TNS   : -0.149
+
+Type  : Fast Model Hold 'inst123'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Recovery 'SW[0]'
+Slack : 0.525
+TNS   : 0.000
+
+Type  : Fast Model Removal 'SW[0]'
+Slack : 0.355
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'IN'
+Slack : -1.380
+TNS   : -29.380
+
+Type  : Fast Model Minimum Pulse Width 'SW[0]'
+Slack : -1.380
+TNS   : -2.380
+
+Type  : Fast Model Minimum Pulse Width 'inst123'
+Slack : -0.500
+TNS   : -21.000
+
+Type  : Fast Model Minimum Pulse Width '74162:inst108|43'
+Slack : -0.500
+TNS   : -1.000
+
+------------------------------------------------------------
