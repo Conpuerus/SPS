@@ -38,19 +38,16 @@
 
 set_global_assignment -name FAMILY "Cyclone II"
 set_global_assignment -name DEVICE EP2C35F672C6
-set_global_assignment -name TOP_LEVEL_ENTITY hex
+set_global_assignment -name TOP_LEVEL_ENTITY zkouska_ledek_a_tlacitek
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "9.1 SP2"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "14:02:55  SEPTEMBER 27, 2011"
 set_global_assignment -name LAST_QUARTUS_VERSION "9.1 SP2"
 set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
-set_global_assignment -name BDF_FILE muj_pokus.bdf
 set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
 set_global_assignment -name MISC_FILE "C:/users/petr/Dokumenty/Documents/ÈVUT/zima 2011/SPS/muj_pokus/muj_pokus.dpf"
-set_global_assignment -name BDF_FILE logika.bdf
 set_global_assignment -name MISC_FILE "D:/muj_pokus/muj_pokus.dpf"
-set_global_assignment -name BDF_FILE datum.bdf
 set_location_assignment PIN_N25 -to SW[0]
 set_location_assignment PIN_N26 -to SW[1]
 set_location_assignment PIN_P25 -to SW[2]
@@ -476,7 +473,9 @@ set_location_assignment PIN_V24 -to GPIO_1[32]
 set_location_assignment PIN_V23 -to GPIO_1[33]
 set_location_assignment PIN_W25 -to GPIO_1[34]
 set_location_assignment PIN_W23 -to GPIO_1[35]
-set_global_assignment -name BDF_FILE ../hex.bdf
+set_global_assignment -name MISC_FILE "F:/SPS/muj_pokus/muj_pokus.dpf"
+set_global_assignment -name BDF_FILE datum_a_logika.bdf
+set_global_assignment -name BDF_FILE zkouska_ledek_a_tlacitek.bdf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"

@@ -1,18 +1,38 @@
-|hex
-HEX0[0] <= SW[0].DB_MAX_OUTPUT_PORT_TYPE
-HEX0[1] <= <GND>
-HEX0[2] <= <GND>
-HEX0[3] <= SW[0].DB_MAX_OUTPUT_PORT_TYPE
-HEX0[4] <= SW[0].DB_MAX_OUTPUT_PORT_TYPE
-HEX0[5] <= SW[0].DB_MAX_OUTPUT_PORT_TYPE
-HEX0[6] <= SW[0].DB_MAX_OUTPUT_PORT_TYPE
-SW[0] => HEX0[0].DATAIN
-SW[0] => HEX0[3].DATAIN
-SW[0] => HEX0[4].DATAIN
-SW[0] => HEX0[5].DATAIN
-SW[0] => HEX0[6].DATAIN
-SW[1] => ~NO_FANOUT~
-SW[2] => ~NO_FANOUT~
-SW[3] => ~NO_FANOUT~
+|datum_a_logika
+HEX0[0] <= <VCC>
+HEX0[3] <= <VCC>
+HEX0[4] <= <VCC>
+HEX0[5] <= <VCC>
+HEX0[6] <= <VCC>
+HEX1[0] <= <VCC>
+HEX1[3] <= <VCC>
+HEX1[4] <= <VCC>
+HEX1[5] <= <VCC>
+HEX1[6] <= <VCC>
+HEX2[6] <= <VCC>
+HEX3[2] <= <VCC>
+HEX3[5] <= <VCC>
+HEX4[6] <= <VCC>
+HEX5[0] <= <VCC>
+HEX5[3] <= <VCC>
+HEX5[4] <= <VCC>
+HEX5[5] <= <VCC>
+HEX5[6] <= <VCC>
+HEX6[0] <= <VCC>
+HEX6[3] <= <VCC>
+HEX6[4] <= <VCC>
+HEX7[0] <= <VCC>
+HEX7[3] <= <VCC>
+HEX7[4] <= <VCC>
+HEX7[5] <= <VCC>
+HEX7[6] <= <VCC>
+LEDR[0] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[1] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+SW[0] => inst1.IN0
+SW[1] => inst1.IN1
+SW[2] => inst1.IN2
+SW[3] => inst4.IN2
+SW[4] => inst4.IN0
+SW[5] => inst4.IN1
 
 

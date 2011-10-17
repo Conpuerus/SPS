@@ -1,6 +1,6 @@
 Classic Timing Analyzer report for muj_pokus
-Tue Sep 27 17:39:20 2011
-Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
+Fri Oct 14 11:21:34 2011
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
 ---------------------
@@ -9,9 +9,8 @@ Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
   1. Legal Notice
   2. Timing Analyzer Summary
   3. Timing Analyzer Settings
-  4. Parallel Compilation
-  5. tpd
-  6. Timing Analyzer Messages
+  4. tpd
+  5. Timing Analyzer Messages
 
 
 
@@ -39,7 +38,7 @@ applicable agreement for further details.
 +------------------------------+-------+---------------+-------------+-------+---------+------------+----------+--------------+
 ; Type                         ; Slack ; Required Time ; Actual Time ; From  ; To      ; From Clock ; To Clock ; Failed Paths ;
 +------------------------------+-------+---------------+-------------+-------+---------+------------+----------+--------------+
-; Worst-case tpd               ; N/A   ; None          ; 5.999 ns    ; SW[0] ; HEX0[0] ; --         ; --       ; 0            ;
+; Worst-case tpd               ; N/A   ; None          ; 6.482 ns    ; SW[1] ; LEDR[0] ; --         ; --       ; 0            ;
 ; Total number of failed paths ;       ;               ;             ;       ;         ;            ;          ; 0            ;
 +------------------------------+-------+---------------+-------------+-------+---------+------------+----------+--------------+
 
@@ -78,33 +77,17 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------------------------------+--------------------+------+----+-------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 4           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     1 processor            ; 100.0%      ;
-;     2-4 processors         ;   0.0%      ;
-+----------------------------+-------------+
-
-
 +---------------------------------------------------------------+
 ; tpd                                                           ;
 +-------+-------------------+-----------------+-------+---------+
 ; Slack ; Required P2P Time ; Actual P2P Time ; From  ; To      ;
 +-------+-------------------+-----------------+-------+---------+
-; N/A   ; None              ; 5.999 ns        ; SW[0] ; HEX0[0] ;
-; N/A   ; None              ; 5.757 ns        ; SW[0] ; HEX0[3] ;
-; N/A   ; None              ; 5.757 ns        ; SW[0] ; HEX0[4] ;
-; N/A   ; None              ; 5.747 ns        ; SW[0] ; HEX0[5] ;
-; N/A   ; None              ; 5.747 ns        ; SW[0] ; HEX0[6] ;
+; N/A   ; None              ; 6.482 ns        ; SW[1] ; LEDR[0] ;
+; N/A   ; None              ; 6.396 ns        ; SW[4] ; LEDR[1] ;
+; N/A   ; None              ; 6.332 ns        ; SW[0] ; LEDR[0] ;
+; N/A   ; None              ; 6.222 ns        ; SW[3] ; LEDR[1] ;
+; N/A   ; None              ; 6.202 ns        ; SW[2] ; LEDR[0] ;
+; N/A   ; None              ; 6.103 ns        ; SW[5] ; LEDR[1] ;
 +-------+-------------------+-----------------+-------+---------+
 
 
@@ -113,19 +96,19 @@ applicable agreement for further details.
 +--------------------------+
 Info: *******************************************************************
 Info: Running Quartus II Classic Timing Analyzer
-    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
-    Info: Processing started: Tue Sep 27 17:39:19 2011
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Fri Oct 14 11:21:32 2011
 Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off muj_pokus -c muj_pokus --timing_analysis_only
-Info: Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info: Longest tpd from source pin "SW[0]" to destination pin "HEX0[0]" is 5.999 ns
-    Info: 1: + IC(0.000 ns) + CELL(0.999 ns) = 0.999 ns; Loc. = PIN_N25; Fanout = 5; PIN Node = 'SW[0]'
-    Info: 2: + IC(2.202 ns) + CELL(2.798 ns) = 5.999 ns; Loc. = PIN_AF10; Fanout = 0; PIN Node = 'HEX0[0]'
-    Info: Total cell delay = 3.797 ns ( 63.29 % )
-    Info: Total interconnect delay = 2.202 ns ( 36.71 % )
+Info: Longest tpd from source pin "SW[1]" to destination pin "LEDR[0]" is 6.482 ns
+    Info: 1: + IC(0.000 ns) + CELL(0.999 ns) = 0.999 ns; Loc. = PIN_N26; Fanout = 1; PIN Node = 'SW[1]'
+    Info: 2: + IC(0.366 ns) + CELL(0.413 ns) = 1.778 ns; Loc. = LCCOMB_X64_Y19_N0; Fanout = 1; COMB Node = 'inst1~0'
+    Info: 3: + IC(1.886 ns) + CELL(2.818 ns) = 6.482 ns; Loc. = PIN_AE23; Fanout = 0; PIN Node = 'LEDR[0]'
+    Info: Total cell delay = 4.230 ns ( 65.26 % )
+    Info: Total interconnect delay = 2.252 ns ( 34.74 % )
 Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 140 megabytes
-    Info: Processing ended: Tue Sep 27 17:39:20 2011
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:00
+    Info: Peak virtual memory: 132 megabytes
+    Info: Processing ended: Fri Oct 14 11:21:35 2011
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:02
 
 

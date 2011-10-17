@@ -24,7 +24,7 @@ applicable agreement for further details.
 	(input)
 	(rect 136 184 304 200)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
-	(text "SW0" (rect 5 0 28 12)(font "Arial" ))
+	(text "SW[0]" (rect 5 0 35 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 92 12)(pt 117 12)(line_width 1))
@@ -41,7 +41,7 @@ applicable agreement for further details.
 	(input)
 	(rect 136 200 304 216)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
-	(text "SW1" (rect 5 0 28 12)(font "Arial" ))
+	(text "SW[1]" (rect 5 0 35 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 92 12)(pt 117 12)(line_width 1))
@@ -58,7 +58,7 @@ applicable agreement for further details.
 	(input)
 	(rect 136 216 304 232)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
-	(text "SW2" (rect 5 0 28 12)(font "Arial" ))
+	(text "SW[2]" (rect 5 0 35 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 92 12)(pt 117 12)(line_width 1))
@@ -75,7 +75,7 @@ applicable agreement for further details.
 	(input)
 	(rect 192 264 360 280)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
-	(text "SW3" (rect 5 0 28 12)(font "Arial" ))
+	(text "SW[3]" (rect 5 0 35 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 92 12)(pt 117 12)(line_width 1))
@@ -92,7 +92,7 @@ applicable agreement for further details.
 	(input)
 	(rect 192 280 360 296)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
-	(text "SW4" (rect 5 0 28 12)(font "Arial" ))
+	(text "SW[4]" (rect 5 0 35 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 92 12)(pt 117 12)(line_width 1))
@@ -109,7 +109,7 @@ applicable agreement for further details.
 	(input)
 	(rect 192 296 360 312)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
-	(text "SW5" (rect 5 0 28 12)(font "Arial" ))
+	(text "SW[5]" (rect 5 0 35 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 92 12)(pt 117 12)(line_width 1))
@@ -126,7 +126,7 @@ applicable agreement for further details.
 	(output)
 	(rect 544 200 720 216)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "LEDR0" (rect 90 0 125 12)(font "Arial" ))
+	(text "LEDR[0]" (rect 90 0 132 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8)(line_width 1))
@@ -143,7 +143,7 @@ applicable agreement for further details.
 	(output)
 	(rect 560 280 736 296)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "LEDR1" (rect 90 0 125 12)(font "Arial" ))
+	(text "LEDR[1]" (rect 90 0 132 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8)(line_width 1))
@@ -236,60 +236,50 @@ applicable agreement for further details.
 	)
 )
 (connector
-	(pt 304 192)
-	(pt 472 192)
-	(bus)
-)
-(connector
-	(pt 472 192)
-	(pt 472 200)
-	(bus)
-)
-(connector
-	(pt 304 224)
-	(pt 472 224)
-	(bus)
-)
-(connector
-	(pt 472 224)
-	(pt 472 216)
-	(bus)
-)
-(connector
-	(pt 304 208)
-	(pt 472 208)
-	(bus)
-)
-(connector
-	(pt 472 272)
-	(pt 472 280)
-	(bus)
-)
-(connector
-	(pt 472 304)
-	(pt 472 296)
-	(bus)
-)
-(connector
-	(pt 360 304)
-	(pt 472 304)
-	(bus)
-)
-(connector
-	(pt 360 288)
-	(pt 472 288)
-	(bus)
-)
-(connector
-	(pt 360 272)
-	(pt 472 272)
-	(bus)
-)
-(connector
 	(pt 536 288)
 	(pt 560 288)
 )
 (connector
 	(pt 536 208)
 	(pt 544 208)
+)
+(connector
+	(pt 304 192)
+	(pt 472 192)
+)
+(connector
+	(pt 472 192)
+	(pt 472 200)
+)
+(connector
+	(pt 304 208)
+	(pt 472 208)
+)
+(connector
+	(pt 304 224)
+	(pt 472 224)
+)
+(connector
+	(pt 472 224)
+	(pt 472 216)
+)
+(connector
+	(pt 360 272)
+	(pt 472 272)
+)
+(connector
+	(pt 472 272)
+	(pt 472 280)
+)
+(connector
+	(pt 360 304)
+	(pt 472 304)
+)
+(connector
+	(pt 472 304)
+	(pt 472 296)
+)
+(connector
+	(pt 360 288)
+	(pt 472 288)
 )

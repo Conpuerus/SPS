@@ -1,5 +1,5 @@
 Quartus II
-Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 11
 1000
 OFF
@@ -22,12 +22,12 @@ VHSM_ON
 # entity
 logika
 # storage
-db|muj_pokus.(0).cnf
-db|muj_pokus.(0).cnf
+db|muj_pokus.(2).cnf
+db|muj_pokus.(2).cnf
 # case_insensitive
 # source_file
 logika.bdf
-21c8a8458c16f282518d9a4f1a9f9936
+15c839822d65dfd69b4d72b321faf39
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
@@ -37,14 +37,14 @@ AUTO
 
 # end
 # entity
-datum
+muj_pokus
 # storage
 db|muj_pokus.(1).cnf
 db|muj_pokus.(1).cnf
 # case_insensitive
 # source_file
-datum.bdf
-9422452643634c4a599e9b3b54365b3
+muj_pokus.bdf
+26cf06a9f9117a7173f1c37d32cc94a
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
@@ -54,14 +54,14 @@ AUTO
 
 # end
 # entity
-hex
+datum_a_logika
 # storage
-db|muj_pokus.(2).cnf
-db|muj_pokus.(2).cnf
+db|muj_pokus.(0).cnf
+db|muj_pokus.(0).cnf
 # case_insensitive
 # source_file
-|hex.bdf
-eead4ca7c2b6e59b7ccb1d2a95cdb7b
+datum_a_logika.bdf
+9f9f328ccfcab2aa21cd91caf8e1bfb
 26
 # internal_option {
 BLOCK_DESIGN_NAMING

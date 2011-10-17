@@ -20,14 +20,117 @@ VHSM_ON
 -- Start VHDL Libraries --
 -- End VHDL Libraries --
 # entity
-delic_casu
+had
 # storage
 db|had.(0).cnf
 db|had.(0).cnf
 # case_insensitive
 # source_file
-|sps|projekt|delic_casu.bdf
-55c8e8e7e5e0f526a26ce703ff852d
+had.bdf
+8b3640d610755c86834a22b59e8ae089
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+74162
+# storage
+db|had.(1).cnf
+db|had.(1).cnf
+# case_insensitive
+# source_file
+c:|altera|91sp2|quartus|libraries|others|maxplus2|74162.bdf
+3dfcc3983973ccb7d22afe865f9be53
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+74161
+# storage
+db|had.(2).cnf
+db|had.(2).cnf
+# case_insensitive
+# source_file
+c:|altera|91sp2|quartus|libraries|others|maxplus2|74161.tdf
+2ed0a3ddd766ade752e5112f973aaea
+7
+# user_parameter {
+DEVICE_FAMILY
+Cyclone II
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+RCO
+-1
+3
+CLK
+-1
+3
+LDN
+-1
+2
+ENT
+-1
+2
+ENP
+-1
+2
+}
+# macro_sequence
+
+# end
+# entity
+f74161
+# storage
+db|had.(3).cnf
+db|had.(3).cnf
+# case_insensitive
+# source_file
+c:|altera|91sp2|quartus|libraries|others|maxplus2|f74161.bdf
+7336e83179d5c5b17228174483d7f
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+delic_casu
+# storage
+db|had.(4).cnf
+db|had.(4).cnf
+# case_insensitive
+# source_file
+delic_casu.bdf
+ae5a9c223a25f1493ff3063434cdd4
 26
 # internal_option {
 BLOCK_DESIGN_NAMING

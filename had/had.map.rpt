@@ -1,5 +1,5 @@
 Analysis & Synthesis report for had
-Tue Oct 11 18:06:11 2011
+Sun Oct 16 12:26:50 2011
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -39,15 +39,15 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +------------------------------------+----------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Oct 11 18:06:11 2011        ;
+; Analysis & Synthesis Status        ; Successful - Sun Oct 16 12:26:50 2011        ;
 ; Quartus II Version                 ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                      ; had                                          ;
 ; Top-level Entity Name              ; delic_casu                                   ;
 ; Family                             ; Cyclone II                                   ;
-; Total logic elements               ; 5                                            ;
-;     Total combinational functions  ; 5                                            ;
-;     Dedicated logic registers      ; 5                                            ;
-; Total registers                    ; 5                                            ;
+; Total logic elements               ; 26                                           ;
+;     Total combinational functions  ; 26                                           ;
+;     Dedicated logic registers      ; 23                                           ;
+; Total registers                    ; 23                                           ;
 ; Total pins                         ; 2                                            ;
 ; Total virtual pins                 ; 0                                            ;
 ; Total memory bits                  ; 0                                            ;
@@ -134,42 +134,42 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                  ;
-+----------------------------------+-----------------+------------------------------------+-------------------------------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path  ;
-+----------------------------------+-----------------+------------------------------------+-------------------------------+
-; ../projekt/delic_casu.bdf        ; yes             ; User Block Diagram/Schematic File  ; F:/SPS/projekt/delic_casu.bdf ;
-+----------------------------------+-----------------+------------------------------------+-------------------------------+
++------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                 ;
++----------------------------------+-----------------+------------------------------------+------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path ;
++----------------------------------+-----------------+------------------------------------+------------------------------+
+; delic_casu.bdf                   ; yes             ; User Block Diagram/Schematic File  ; F:/SPS/had/delic_casu.bdf    ;
++----------------------------------+-----------------+------------------------------------+------------------------------+
 
 
-+------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary          ;
-+---------------------------------------------+--------+
-; Resource                                    ; Usage  ;
-+---------------------------------------------+--------+
-; Estimated Total logic elements              ; 5      ;
-;                                             ;        ;
-; Total combinational functions               ; 5      ;
-; Logic element usage by number of LUT inputs ;        ;
-;     -- 4 input functions                    ; 0      ;
-;     -- 3 input functions                    ; 0      ;
-;     -- <=2 input functions                  ; 5      ;
-;                                             ;        ;
-; Logic elements by mode                      ;        ;
-;     -- normal mode                          ; 5      ;
-;     -- arithmetic mode                      ; 0      ;
-;                                             ;        ;
-; Total registers                             ; 5      ;
-;     -- Dedicated logic registers            ; 5      ;
-;     -- I/O registers                        ; 0      ;
-;                                             ;        ;
-; I/O pins                                    ; 2      ;
-; Maximum fan-out node                        ; inst74 ;
-; Maximum fan-out                             ; 5      ;
-; Total fan-out                               ; 21     ;
-; Average fan-out                             ; 1.75   ;
-+---------------------------------------------+--------+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimated Total logic elements              ; 26    ;
+;                                             ;       ;
+; Total combinational functions               ; 26    ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 2     ;
+;     -- 3 input functions                    ; 0     ;
+;     -- <=2 input functions                  ; 24    ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 26    ;
+;     -- arithmetic mode                      ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 23    ;
+;     -- Dedicated logic registers            ; 23    ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 2     ;
+; Maximum fan-out node                        ; inst7 ;
+; Maximum fan-out                             ; 3     ;
+; Total fan-out                               ; 80    ;
+; Average fan-out                             ; 1.57  ;
++---------------------------------------------+-------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -177,7 +177,7 @@ applicable agreement for further details.
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |delic_casu                ; 5 (5)             ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 2    ; 0            ; |delic_casu         ; work         ;
+; |delic_casu                ; 26 (26)           ; 23 (23)      ; 0           ; 0            ; 0       ; 0         ; 2    ; 0            ; |delic_casu         ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -187,10 +187,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 5     ;
+; Total registers                              ; 23    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 4     ;
+; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
@@ -203,85 +203,20 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Tue Oct 11 18:06:06 2011
+    Info: Processing started: Sun Oct 16 12:26:46 2011
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off had -c had
 Info: Found 1 design units, including 1 entities, in source file had.bdf
     Info: Found entity 1: had
-Info: Found 1 design units, including 1 entities, in source file /sps/projekt/delic_casu.bdf
+Info: Found 1 design units, including 1 entities, in source file delic_casu.bdf
     Info: Found entity 1: delic_casu
 Info: Elaborating entity "delic_casu" for the top level hierarchy
-Warning: Primitive "JKFF" of instance "inst10" not used
-Warning: Primitive "NOT" of instance "inst11" not used
-Warning: Primitive "JKFF" of instance "inst12" not used
-Warning: Primitive "NOT" of instance "inst13" not used
-Warning: Primitive "JKFF" of instance "inst14" not used
-Warning: Primitive "NOT" of instance "inst15" not used
-Warning: Primitive "VCC" of instance "inst16" not used
-Warning: Primitive "AND2" of instance "inst17" not used
-Warning: Primitive "JKFF" of instance "inst18" not used
-Warning: Primitive "NOT" of instance "inst19" not used
-Warning: Primitive "JKFF" of instance "inst20" not used
-Warning: Primitive "JKFF" of instance "inst21" not used
-Warning: Primitive "NOT" of instance "inst22" not used
-Warning: Primitive "JKFF" of instance "inst23" not used
-Warning: Primitive "NOT" of instance "inst24" not used
-Warning: Primitive "VCC" of instance "inst25" not used
-Warning: Primitive "AND2" of instance "inst26" not used
-Warning: Primitive "JKFF" of instance "inst27" not used
-Warning: Primitive "JKFF" of instance "inst28" not used
-Warning: Primitive "NOT" of instance "inst29" not used
-Warning: Primitive "JKFF" of instance "inst30" not used
-Warning: Primitive "NOT" of instance "inst31" not used
-Warning: Primitive "JKFF" of instance "inst32" not used
-Warning: Primitive "NOT" of instance "inst33" not used
-Warning: Primitive "VCC" of instance "inst34" not used
-Warning: Primitive "AND2" of instance "inst35" not used
-Warning: Primitive "JKFF" of instance "inst36" not used
-Warning: Primitive "JKFF" of instance "inst37" not used
-Warning: Primitive "NOT" of instance "inst38" not used
-Warning: Primitive "JKFF" of instance "inst39" not used
-Warning: Primitive "NOT" of instance "inst40" not used
-Warning: Primitive "JKFF" of instance "inst41" not used
-Warning: Primitive "NOT" of instance "inst42" not used
-Warning: Primitive "VCC" of instance "inst43" not used
-Warning: Primitive "AND2" of instance "inst44" not used
-Warning: Primitive "JKFF" of instance "inst45" not used
-Warning: Primitive "JKFF" of instance "inst46" not used
-Warning: Primitive "NOT" of instance "inst47" not used
-Warning: Primitive "JKFF" of instance "inst48" not used
-Warning: Primitive "NOT" of instance "inst49" not used
-Warning: Primitive "JKFF" of instance "inst50" not used
-Warning: Primitive "NOT" of instance "inst51" not used
-Warning: Primitive "VCC" of instance "inst52" not used
-Warning: Primitive "AND2" of instance "inst53" not used
-Warning: Primitive "JKFF" of instance "inst54" not used
-Warning: Primitive "JKFF" of instance "inst55" not used
-Warning: Primitive "NOT" of instance "inst56" not used
-Warning: Primitive "JKFF" of instance "inst57" not used
-Warning: Primitive "NOT" of instance "inst58" not used
-Warning: Primitive "JKFF" of instance "inst59" not used
-Warning: Primitive "NOT" of instance "inst60" not used
-Warning: Primitive "VCC" of instance "inst61" not used
-Warning: Primitive "AND2" of instance "inst62" not used
-Warning: Primitive "TFF" of instance "inst65" not used
-Warning: Primitive "NOT" of instance "inst66" not used
-Warning: Primitive "NOT" of instance "inst67" not used
-Warning: Primitive "NOT" of instance "inst68" not used
-Warning: Primitive "NOT" of instance "inst69" not used
-Warning: Primitive "JKFF" of instance "inst7" not used
-Warning: Primitive "NOT" of instance "inst70" not used
-Warning: Primitive "NOT" of instance "inst71" not used
-Warning: Primitive "VCC" of instance "inst73" not used
-Warning: Ignored assignments for entity "had" -- entity does not exist in design
-    Warning: Assignment for entity set_global_assignment -name LL_ROOT_REGION ON -entity had -section_id "Root Region" was ignored
-    Warning: Assignment for entity set_global_assignment -name LL_MEMBER_STATE LOCKED -entity had -section_id "Root Region" was ignored
-Info: Implemented 7 device resources after synthesis - the final resource count might be different
+Info: Implemented 28 device resources after synthesis - the final resource count might be different
     Info: Implemented 1 input pins
     Info: Implemented 1 output pins
-    Info: Implemented 5 logic cells
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 65 warnings
+    Info: Implemented 26 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 165 megabytes
-    Info: Processing ended: Tue Oct 11 18:06:11 2011
+    Info: Processing ended: Sun Oct 16 12:26:51 2011
     Info: Elapsed time: 00:00:05
     Info: Total CPU time (on all processors): 00:00:03
 
