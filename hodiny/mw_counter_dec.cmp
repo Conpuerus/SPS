@@ -13,10 +13,13 @@
 --applicable agreement for further details.
 
 
-component counter
+component mw_counter_dec
 	PORT
 	(
+		aload		: IN STD_LOGIC ;
+		clk_en		: IN STD_LOGIC ;
 		clock		: IN STD_LOGIC ;
+		data		: IN STD_LOGIC_VECTOR (3 DOWNTO 0);
 		cout		: OUT STD_LOGIC ;
 		q		: OUT STD_LOGIC_VECTOR (3 DOWNTO 0)
 	);

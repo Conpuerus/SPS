@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="hodiny">
+		<CBX_INST_ENTRY INSTANCE_NAME="|hodiny|reverse_cntr:inst1111|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_s8l.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|hodiny|reverse_cntr:inst1112|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_s8l.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|hodiny|reverse_cntr:inst1113|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_s8l.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

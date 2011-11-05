@@ -1,6 +1,6 @@
 Assembler report for had
-Sun Oct 16 12:27:30 2011
-Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+Tue Oct 25 18:04:06 2011
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
 
 
 ---------------------
@@ -10,8 +10,8 @@ Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: F:/SPS/had/had.sof
-  6. Assembler Device Options: F:/SPS/had/had.pof
+  5. Assembler Device Options: G:/SPShad/had/had.sof
+  6. Assembler Device Options: G:/SPShad/had/had.pof
   7. Assembler Messages
 
 
@@ -38,9 +38,9 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Sun Oct 16 12:27:30 2011 ;
+; Assembler Status      ; Successful - Tue Oct 25 18:04:06 2011 ;
 ; Revision Name         ; had                                   ;
-; Top-level Entity Name ; delic_casu                            ;
+; Top-level Entity Name ; had                                   ;
 ; Family                ; Cyclone II                            ;
 ; Device                ; EP2C35F672C6                          ;
 +-----------------------+---------------------------------------+
@@ -83,32 +83,32 @@ applicable agreement for further details.
 +---------------------------+
 ; File Name                 ;
 +---------------------------+
-; F:/SPS/had/had.sof        ;
-; F:/SPS/had/had.pof        ;
+; G:/SPShad/had/had.sof     ;
+; G:/SPShad/had/had.pof     ;
 +---------------------------+
 
 
-+----------------------------------------------+
-; Assembler Device Options: F:/SPS/had/had.sof ;
-+----------------+-----------------------------+
-; Option         ; Setting                     ;
-+----------------+-----------------------------+
-; Device         ; EP2C35F672C6                ;
-; JTAG usercode  ; 0xFFFFFFFF                  ;
-; Checksum       ; 0x002FB3EA                  ;
-+----------------+-----------------------------+
++-------------------------------------------------+
+; Assembler Device Options: G:/SPShad/had/had.sof ;
++----------------+--------------------------------+
+; Option         ; Setting                        ;
++----------------+--------------------------------+
+; Device         ; EP2C35F672C6                   ;
+; JTAG usercode  ; 0xFFFFFFFF                     ;
+; Checksum       ; 0x003089FC                     ;
++----------------+--------------------------------+
 
 
-+----------------------------------------------+
-; Assembler Device Options: F:/SPS/had/had.pof ;
-+--------------------+-------------------------+
-; Option             ; Setting                 ;
-+--------------------+-------------------------+
-; Device             ; EPCS16                  ;
-; JTAG usercode      ; 0x00000000              ;
-; Checksum           ; 0x1C789915              ;
-; Compression Ratio  ; 3                       ;
-+--------------------+-------------------------+
++-------------------------------------------------+
+; Assembler Device Options: G:/SPShad/had/had.pof ;
++--------------------+----------------------------+
+; Option             ; Setting                    ;
++--------------------+----------------------------+
+; Device             ; EPCS16                     ;
+; JTAG usercode      ; 0x00000000                 ;
+; Checksum           ; 0x1C774459                 ;
+; Compression Ratio  ; 3                          ;
++--------------------+----------------------------+
 
 
 +--------------------+
@@ -116,15 +116,15 @@ applicable agreement for further details.
 +--------------------+
 Info: *******************************************************************
 Info: Running Quartus II Assembler
-    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Sun Oct 16 12:27:23 2011
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
+    Info: Processing started: Tue Oct 25 18:04:03 2011
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off had -c had
 Info: Writing out detailed assembly data for power analysis
 Info: Assembler is generating device programming files
 Info: Quartus II Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 213 megabytes
-    Info: Processing ended: Sun Oct 16 12:27:30 2011
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:06
+    Info: Peak virtual memory: 221 megabytes
+    Info: Processing ended: Tue Oct 25 18:04:07 2011
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:03
 
 

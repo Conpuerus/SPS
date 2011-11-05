@@ -1,5 +1,181 @@
-|delic_casu
-LEDR[0] <= inst24.DB_MAX_OUTPUT_PORT_TYPE
-CLOCK_50 => instCLKn.IN0
+|had
+LEDR[0] <= inst76.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[1] <= inst77.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[2] <= inst78.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[3] <= inst79.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[4] <= inst80.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[5] <= inst81.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[6] <= inst82.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[7] <= inst83.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[8] <= inst84.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[9] <= inst85.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[10] <= inst86.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[11] <= inst87.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[12] <= inst88.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[13] <= inst89.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[14] <= inst90.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[15] <= inst91.DB_MAX_OUTPUT_PORT_TYPE
+CLOCK_50 => decadic_div:inst4.IN
+SW[0] => hi_sw:inst96.IN0
+SW[1] => hi_sw:inst96.IN1
+SW[2] => hi_sw:inst96.IN2
+SW[3] => hi_sw:inst96.IN3
+SW[4] => hi_sw:inst96.IN4
+SW[5] => hi_sw:inst96.IN5
+SW[6] => hi_sw:inst96.IN6
+SW[7] => hi_sw:inst96.IN7
+SW[8] => hi_sw:inst96.IN8
+SW[9] => hi_sw:inst96.IN9
+SW[10] => hi_sw:inst96.IN10
+SW[11] => hi_sw:inst96.IN11
+SW[12] => hi_sw:inst96.IN12
+SW[13] => hi_sw:inst96.IN13
+SW[14] => hi_sw:inst96.IN14
+SW[15] => hi_sw:inst96.IN15
+
+
+|had|74154:inst7
+O0N <= 32.DB_MAX_OUTPUT_PORT_TYPE
+G1N => 45.IN0
+G2N => 45.IN1
+A => 43.IN0
+B => 40.IN0
+C => 36.IN0
+D => 34.IN0
+O1N <= 31.DB_MAX_OUTPUT_PORT_TYPE
+O2N <= 30.DB_MAX_OUTPUT_PORT_TYPE
+O3N <= 29.DB_MAX_OUTPUT_PORT_TYPE
+O4N <= 28.DB_MAX_OUTPUT_PORT_TYPE
+O5N <= 27.DB_MAX_OUTPUT_PORT_TYPE
+O6N <= 26.DB_MAX_OUTPUT_PORT_TYPE
+O7N <= 25.DB_MAX_OUTPUT_PORT_TYPE
+O8N <= 24.DB_MAX_OUTPUT_PORT_TYPE
+O9N <= 23.DB_MAX_OUTPUT_PORT_TYPE
+O10N <= 22.DB_MAX_OUTPUT_PORT_TYPE
+O11N <= 21.DB_MAX_OUTPUT_PORT_TYPE
+O12N <= 20.DB_MAX_OUTPUT_PORT_TYPE
+O13N <= 19.DB_MAX_OUTPUT_PORT_TYPE
+O14N <= 18.DB_MAX_OUTPUT_PORT_TYPE
+O15N <= 17.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|had|counter:inst100
+A <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst9.IN0
+CLK => inst.CLK
+CLK => inst2.CLK
+CLK => inst3.CLK
+CLK => inst4.CLK
+CLR => inst9.IN1
+B <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+C <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+D <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|had|decadic_div:inst75
+OUT <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+IN => inst.CLK
+IN => inst2.CLK
+IN => inst3.CLK
+IN => inst1.CLK
+
+
+|had|decadic_div:inst74
+OUT <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+IN => inst.CLK
+IN => inst2.CLK
+IN => inst3.CLK
+IN => inst1.CLK
+
+
+|had|decadic_div:inst73
+OUT <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+IN => inst.CLK
+IN => inst2.CLK
+IN => inst3.CLK
+IN => inst1.CLK
+
+
+|had|decadic_div:inst57
+OUT <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+IN => inst.CLK
+IN => inst2.CLK
+IN => inst3.CLK
+IN => inst1.CLK
+
+
+|had|decadic_div:inst26
+OUT <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+IN => inst.CLK
+IN => inst2.CLK
+IN => inst3.CLK
+IN => inst1.CLK
+
+
+|had|decadic_div:inst2
+OUT <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+IN => inst.CLK
+IN => inst2.CLK
+IN => inst3.CLK
+IN => inst1.CLK
+
+
+|had|decadic_div:inst4
+OUT <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+IN => inst.CLK
+IN => inst2.CLK
+IN => inst3.CLK
+IN => inst1.CLK
+
+
+|had|hi_sw:inst96
+OUT0 <= inst93.DB_MAX_OUTPUT_PORT_TYPE
+IN15 => inst47.IN0
+IN15 => inst50.IN0
+IN15 => OUT15.DATAIN
+IN14 => inst47.IN1
+IN14 => inst51.IN1
+IN13 => inst52.IN1
+IN13 => inst54.IN1
+IN12 => inst55.IN1
+IN12 => inst57.IN1
+IN11 => inst58.IN1
+IN11 => inst60.IN1
+IN10 => inst61.IN1
+IN10 => inst63.IN1
+IN9 => inst64.IN1
+IN9 => inst66.IN1
+IN8 => inst67.IN1
+IN8 => inst69.IN1
+IN7 => inst70.IN1
+IN7 => inst72.IN1
+IN6 => inst73.IN1
+IN6 => inst75.IN1
+IN5 => inst76.IN1
+IN5 => inst78.IN1
+IN4 => inst79.IN1
+IN4 => inst81.IN1
+IN3 => inst82.IN1
+IN3 => inst84.IN1
+IN2 => inst85.IN1
+IN2 => inst87.IN1
+IN1 => inst88.IN1
+IN1 => inst90.IN1
+IN0 => inst93.IN1
+OUT1 <= inst90.DB_MAX_OUTPUT_PORT_TYPE
+OUT2 <= inst87.DB_MAX_OUTPUT_PORT_TYPE
+OUT3 <= inst84.DB_MAX_OUTPUT_PORT_TYPE
+OUT4 <= inst81.DB_MAX_OUTPUT_PORT_TYPE
+OUT5 <= inst78.DB_MAX_OUTPUT_PORT_TYPE
+OUT6 <= inst75.DB_MAX_OUTPUT_PORT_TYPE
+OUT7 <= inst72.DB_MAX_OUTPUT_PORT_TYPE
+OUT8 <= inst69.DB_MAX_OUTPUT_PORT_TYPE
+OUT9 <= inst66.DB_MAX_OUTPUT_PORT_TYPE
+OUT10 <= inst63.DB_MAX_OUTPUT_PORT_TYPE
+OUT11 <= inst60.DB_MAX_OUTPUT_PORT_TYPE
+OUT12 <= inst57.DB_MAX_OUTPUT_PORT_TYPE
+OUT13 <= inst54.DB_MAX_OUTPUT_PORT_TYPE
+OUT14 <= inst51.DB_MAX_OUTPUT_PORT_TYPE
+OUT15 <= IN15.DB_MAX_OUTPUT_PORT_TYPE
 
 

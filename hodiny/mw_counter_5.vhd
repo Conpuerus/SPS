@@ -4,7 +4,7 @@
 -- MODULE: LPM_COUNTER 
 
 -- ============================================================
--- File Name: counter.vhd
+-- File Name: mw_counter_5.vhd
 -- Megafunction Name(s):
 -- 			LPM_COUNTER
 --
@@ -39,17 +39,20 @@ USE ieee.std_logic_1164.all;
 LIBRARY lpm;
 USE lpm.all;
 
-ENTITY counter IS
+ENTITY mw_counter_5 IS
 	PORT
 	(
+		aload		: IN STD_LOGIC ;
+		clk_en		: IN STD_LOGIC ;
 		clock		: IN STD_LOGIC ;
+		data		: IN STD_LOGIC_VECTOR (3 DOWNTO 0);
 		cout		: OUT STD_LOGIC ;
 		q		: OUT STD_LOGIC_VECTOR (3 DOWNTO 0)
 	);
-END counter;
+END mw_counter_5;
 
 
-ARCHITECTURE SYN OF counter IS
+ARCHITECTURE SYN OF mw_counter_5 IS
 
 	SIGNAL sub_wire0	: STD_LOGIC ;
 	SIGNAL sub_wire1	: STD_LOGIC_VECTOR (3 DOWNTO 0);
@@ -59,12 +62,16 @@ ARCHITECTURE SYN OF counter IS
 	COMPONENT lpm_counter
 	GENERIC (
 		lpm_direction		: STRING;
+		lpm_modulus		: NATURAL;
 		lpm_port_updown		: STRING;
 		lpm_type		: STRING;
 		lpm_width		: NATURAL
 	);
 	PORT (
+			clk_en	: IN STD_LOGIC ;
 			clock	: IN STD_LOGIC ;
+			data	: IN STD_LOGIC_VECTOR (3 DOWNTO 0);
+			aload	: IN STD_LOGIC ;
 			cout	: OUT STD_LOGIC ;
 			q	: OUT STD_LOGIC_VECTOR (3 DOWNTO 0)
 	);
@@ -77,12 +84,16 @@ BEGIN
 	LPM_COUNTER_component : LPM_COUNTER
 	GENERIC MAP (
 		lpm_direction => "UP",
+		lpm_modulus => 6,
 		lpm_port_updown => "PORT_UNUSED",
 		lpm_type => "LPM_COUNTER",
 		lpm_width => 4
 	)
 	PORT MAP (
+		clk_en => clk_en,
 		clock => clock,
+		data => data,
+		aload => aload,
 		cout => sub_wire0,
 		q => sub_wire1
 	);
@@ -95,17 +106,17 @@ END SYN;
 -- CNX file retrieval info
 -- ============================================================
 -- Retrieval info: PRIVATE: ACLR NUMERIC "0"
--- Retrieval info: PRIVATE: ALOAD NUMERIC "0"
+-- Retrieval info: PRIVATE: ALOAD NUMERIC "1"
 -- Retrieval info: PRIVATE: ASET NUMERIC "0"
 -- Retrieval info: PRIVATE: ASET_ALL1 NUMERIC "1"
--- Retrieval info: PRIVATE: CLK_EN NUMERIC "0"
+-- Retrieval info: PRIVATE: CLK_EN NUMERIC "1"
 -- Retrieval info: PRIVATE: CNT_EN NUMERIC "0"
 -- Retrieval info: PRIVATE: CarryIn NUMERIC "0"
 -- Retrieval info: PRIVATE: CarryOut NUMERIC "1"
 -- Retrieval info: PRIVATE: Direction NUMERIC "0"
 -- Retrieval info: PRIVATE: INTENDED_DEVICE_FAMILY STRING "Cyclone II"
--- Retrieval info: PRIVATE: ModulusCounter NUMERIC "0"
--- Retrieval info: PRIVATE: ModulusValue NUMERIC "0"
+-- Retrieval info: PRIVATE: ModulusCounter NUMERIC "1"
+-- Retrieval info: PRIVATE: ModulusValue NUMERIC "6"
 -- Retrieval info: PRIVATE: SCLR NUMERIC "0"
 -- Retrieval info: PRIVATE: SLOAD NUMERIC "0"
 -- Retrieval info: PRIVATE: SSET NUMERIC "0"
@@ -115,18 +126,25 @@ END SYN;
 -- Retrieval info: PRIVATE: new_diagram STRING "1"
 -- Retrieval info: LIBRARY: lpm lpm.lpm_components.all
 -- Retrieval info: CONSTANT: LPM_DIRECTION STRING "UP"
+-- Retrieval info: CONSTANT: LPM_MODULUS NUMERIC "6"
 -- Retrieval info: CONSTANT: LPM_PORT_UPDOWN STRING "PORT_UNUSED"
 -- Retrieval info: CONSTANT: LPM_TYPE STRING "LPM_COUNTER"
 -- Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "4"
+-- Retrieval info: USED_PORT: aload 0 0 0 0 INPUT NODEFVAL "aload"
+-- Retrieval info: USED_PORT: clk_en 0 0 0 0 INPUT NODEFVAL "clk_en"
 -- Retrieval info: USED_PORT: clock 0 0 0 0 INPUT NODEFVAL "clock"
 -- Retrieval info: USED_PORT: cout 0 0 0 0 OUTPUT NODEFVAL "cout"
+-- Retrieval info: USED_PORT: data 0 0 4 0 INPUT NODEFVAL "data[3..0]"
 -- Retrieval info: USED_PORT: q 0 0 4 0 OUTPUT NODEFVAL "q[3..0]"
+-- Retrieval info: CONNECT: @aload 0 0 0 0 aload 0 0 0 0
+-- Retrieval info: CONNECT: @clk_en 0 0 0 0 clk_en 0 0 0 0
 -- Retrieval info: CONNECT: @clock 0 0 0 0 clock 0 0 0 0
+-- Retrieval info: CONNECT: @data 0 0 4 0 data 0 0 4 0
 -- Retrieval info: CONNECT: cout 0 0 0 0 @cout 0 0 0 0
 -- Retrieval info: CONNECT: q 0 0 4 0 @q 0 0 4 0
--- Retrieval info: GEN_FILE: TYPE_NORMAL counter.vhd TRUE
--- Retrieval info: GEN_FILE: TYPE_NORMAL counter.inc FALSE
--- Retrieval info: GEN_FILE: TYPE_NORMAL counter.cmp TRUE
--- Retrieval info: GEN_FILE: TYPE_NORMAL counter.bsf TRUE FALSE
--- Retrieval info: GEN_FILE: TYPE_NORMAL counter_inst.vhd FALSE
+-- Retrieval info: GEN_FILE: TYPE_NORMAL mw_counter_5.vhd TRUE
+-- Retrieval info: GEN_FILE: TYPE_NORMAL mw_counter_5.inc FALSE
+-- Retrieval info: GEN_FILE: TYPE_NORMAL mw_counter_5.cmp TRUE
+-- Retrieval info: GEN_FILE: TYPE_NORMAL mw_counter_5.bsf TRUE FALSE
+-- Retrieval info: GEN_FILE: TYPE_NORMAL mw_counter_5_inst.vhd FALSE
 -- Retrieval info: LIB_FILE: lpm

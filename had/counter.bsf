@@ -4,7 +4,7 @@ editor if you plan to continue editing the block that represents it in
 the Block Editor! File corruption is VERY likely to occur.
 */
 /*
-Copyright (C) 1991-2011 Altera Corporation
+Copyright (C) 1991-2010 Altera Corporation
 Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
@@ -18,47 +18,54 @@ programming logic devices manufactured by Altera and sold by
 Altera or its authorized distributors.  Please refer to the 
 applicable agreement for further details.
 */
-(header "symbol" (version "1.2"))
+(header "symbol" (version "1.1"))
 (symbol
-	(rect 0 0 144 64)
-	(text "counter" (rect 52 0 103 16)(font "Arial" (font_size 10)))
-	(text "inst" (rect 8 49 25 60)(font "Arial" ))
+	(rect 16 16 112 144)
+	(text "counter" (rect 5 0 48 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 112 25 124)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
-		(text "clock" (rect 0 0 28 13)(font "Arial" (font_size 8)))
-		(text "clock" (rect 26 26 50 38)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32))
+		(text "CLK" (rect 0 0 23 14)(font "Arial" (font_size 8)))
+		(text "CLK" (rect 21 27 44 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
 	)
 	(port
-		(pt 144 48)
-		(output)
-		(text "cout" (rect 0 0 23 13)(font "Arial" (font_size 8)))
-		(text "cout" (rect 105 42 124 54)(font "Arial" (font_size 8)))
-		(line (pt 144 48)(pt 128 48))
+		(pt 0 48)
+		(input)
+		(text "CLR" (rect 0 0 23 14)(font "Arial" (font_size 8)))
+		(text "CLR" (rect 21 43 44 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
 	)
 	(port
-		(pt 144 32)
+		(pt 96 32)
 		(output)
-		(text "q[3..0]" (rect 0 0 35 13)(font "Arial" (font_size 8)))
-		(text "q[3..0]" (rect 95 26 124 38)(font "Arial" (font_size 8)))
-		(line (pt 144 32)(pt 128 32)(line_width 3))
+		(text "A" (rect 0 0 9 14)(font "Arial" (font_size 8)))
+		(text "A" (rect 66 27 75 41)(font "Arial" (font_size 8)))
+		(line (pt 96 32)(pt 80 32)(line_width 1))
+	)
+	(port
+		(pt 96 48)
+		(output)
+		(text "B" (rect 0 0 8 14)(font "Arial" (font_size 8)))
+		(text "B" (rect 67 43 75 57)(font "Arial" (font_size 8)))
+		(line (pt 96 48)(pt 80 48)(line_width 1))
+	)
+	(port
+		(pt 96 64)
+		(output)
+		(text "C" (rect 0 0 8 14)(font "Arial" (font_size 8)))
+		(text "C" (rect 67 59 75 73)(font "Arial" (font_size 8)))
+		(line (pt 96 64)(pt 80 64)(line_width 1))
+	)
+	(port
+		(pt 96 80)
+		(output)
+		(text "D" (rect 0 0 8 14)(font "Arial" (font_size 8)))
+		(text "D" (rect 67 75 75 89)(font "Arial" (font_size 8)))
+		(line (pt 96 80)(pt 80 80)(line_width 1))
 	)
 	(drawing
-		(text "up counter" (rect 84 23 213 56)(font "Arial" ))
-		(line (pt 16 16)(pt 16 48))
-		(line (pt 16 16)(pt 128 16))
-		(line (pt 16 48)(pt 128 48))
-		(line (pt 128 16)(pt 128 48))
-		(line (pt 0 0)(pt 146 0))
-		(line (pt 146 0)(pt 146 66))
-		(line (pt 0 66)(pt 146 66))
-		(line (pt 0 0)(pt 0 66))
-		(line (pt 16 26)(pt 22 32))
-		(line (pt 22 32)(pt 16 38))
-		(line (pt 0 0)(pt 0 0))
-		(line (pt 0 0)(pt 0 0))
-		(line (pt 0 0)(pt 0 0))
-		(line (pt 0 0)(pt 0 0))
+		(rectangle (rect 16 16 80 112)(line_width 1))
 	)
 )
